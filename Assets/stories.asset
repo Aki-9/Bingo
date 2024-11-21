@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3e56fe771a451342aff04defe7033e8, type: 3}
+  m_Name: stories
+  m_EditorClassIdentifier: 
+  stories:
+  - Background: {fileID: 21300000, guid: 0744bad0ab1da6743a773a23b79fc404, type: 3}
+    AndkunImage: {fileID: 21300000, guid: 8ecbf0656114a0841904422d207c2274, type: 3}
+    SorukunImage: {fileID: 21300000, guid: 37ed4e5c4c85bc74b8a9a6626edde307, type: 3}
+    StoryText: "\u305D\u308B\u304F\u3093\n\u4ECA\u304B\u3089\u30D3\u30F3\u30B4\u30B2\u30FC\u30E0\u3092\u59CB\u3081\u308B\u3088"
+    ExplantionText: 
+    CharacterName: "\u3042\u3093\u3069\u304F\u3093"
+  - Background: {fileID: 21300000, guid: 0744bad0ab1da6743a773a23b79fc404, type: 3}
+    AndkunImage: {fileID: 21300000, guid: 26fce322d1576e6448afc3c797fb5b4a, type: 3}
+    SorukunImage: {fileID: 21300000, guid: a15afe1be752fc2468c1a237d08108e2, type: 3}
+    StoryText: "\u3042\u3093\u3069\u304F\u3093\u3001\u697D\u3057\u307F\u3060\u306D\uFF5E\n\u65E9\u901F\u30B2\u30FC\u30E0\u3092\u59CB\u3081\u3088\u3046\u3088"
+    ExplantionText: 
+    CharacterName: "\u305D\u308B\u304F\u3093"
+  - Background: {fileID: 21300000, guid: 0744bad0ab1da6743a773a23b79fc404, type: 3}
+    AndkunImage: {fileID: 21300000, guid: 1e70e3278bfa8db408ac8702cfa47f14, type: 3}
+    SorukunImage: {fileID: 21300000, guid: 37ed4e5c4c85bc74b8a9a6626edde307, type: 3}
+    StoryText: "\u30B2\u30FC\u30E0\u3092\u59CB\u3081\u308B\u524D\u306B\u4F55\u500B\u304B\u899A\u3048\u3066\u307B\u3057\u3044\u30EB\u30FC\u30EB\u304C\u3042\u308B\u3093\u3060"
+    ExplantionText: 
+    CharacterName: "\u3042\u3093\u3069\u304F\u3093"
+  - Background: {fileID: 21300000, guid: 0744bad0ab1da6743a773a23b79fc404, type: 3}
+    AndkunImage: {fileID: 21300000, guid: 639103a5120c67c4dac9b585ef0af934, type: 3}
+    SorukunImage: {fileID: 21300000, guid: a15afe1be752fc2468c1a237d08108e2, type: 3}
+    StoryText: "\u305D\u3046\u306A\u3093\u3060\u306D\uFF01\n\u308F\u304B\u308A\u3084\u3059\u304F\u6559\u3048\u3066\u3088"
+    ExplantionText: 
+    CharacterName: "\u305D\u308B\u304F\u3093"
+  - Background: {fileID: 21300000, guid: 0744bad0ab1da6743a773a23b79fc404, type: 3}
+    AndkunImage: {fileID: 21300000, guid: 1e70e3278bfa8db408ac8702cfa47f14, type: 3}
+    SorukunImage: {fileID: 21300000, guid: 37ed4e5c4c85bc74b8a9a6626edde307, type: 3}
+    StoryText: "\u5927\u4F53\u306E\u30EB\u30FC\u30EB\u306F\u666E\u901A\u306E\u30D3\u30F3\u30B4\u30B2\u30FC\u30E0\u3068\u540C\u3058\u306A\u3093\u3060\u3051\u3069\n\u30D3\u30F3\u30B4\u306B\u306A\u3063\u305F\u3089\u666F\u54C1\u304C\u3082\u3089\u3048\u308B\u3093\u3060\u3051\u3069\u3001\u305D\u306E\u6642\u300C\u91D1\u306E\u65A7\u3001\u9280\u306E\u65A7\u300D\u3063\u3066\u3044\u3046\u300E\u8FFD\u52A0\u30EB\u30FC\u30EB\u300F\u304C\u3042\u308B\u3093\u3060\uFF08\u4EE5\u4E0B\u7565\uFF09"
+    ExplantionText: "\u3007\u91D1\u306E\u65A7\u30FB\u9280\u306E\u65A7\u30B2\u30FC\u30E0\n\u30D3\u30F3\u30B4\u306B\u306A\u3063\u305F\u4EBA\u306F\u300C\u91D1\u306E\u65A7\u300D\u304B\u300C\u9280\u306E\u65A7\u300D\u3092\u9078\u3093\u3067\u3082\u3089\u3046\n\u305D\u308C\u4EE5\u5916\u306F\u308F\u304B\u3089\u3093"
+    CharacterName: "\u3042\u3093\u3069\u304F\u3093"
+  - Background: {fileID: 21300000, guid: 0744bad0ab1da6743a773a23b79fc404, type: 3}
+    AndkunImage: {fileID: 21300000, guid: 26fce322d1576e6448afc3c797fb5b4a, type: 3}
+    SorukunImage: {fileID: 21300000, guid: a15afe1be752fc2468c1a237d08108e2, type: 3}
+    StoryText: "\u3042\u3093\u3069\u304F\u3093\u3001\u3042\u308A\u304C\u3068\u3046\n\u30EB\u30FC\u30EB\u306F\u308F\u304B\u3063\u305F\u3088\uFF01\n\u305D\u308C\u3058\u3083\u3042\u30B2\u30FC\u30E0\u3092\u59CB\u3081\u3088\u3046\uFF01"
+    ExplantionText: "\u3007\u91D1\u306E\u65A7\u30FB\u9280\u306E\u65A7\u30B2\u30FC\u30E0\n\u30D3\u30F3\u30B4\u306B\u306A\u3063\u305F\u4EBA\u306F\u300C\u91D1\u306E\u65A7\u300D\u304B\u300C\u9280\u306E\u65A7\u300D\u3092\u9078\u3093\u3067\u3082\u3089\u3046\n\u305D\u308C\u4EE5\u5916\u306F\u308F\u304B\u3089\u3093\n\n\u30071"
+    CharacterName: "\u305D\u308B\u304F\u3093"
+  - Background: {fileID: 21300000, guid: 0744bad0ab1da6743a773a23b79fc404, type: 3}
+    AndkunImage: {fileID: 21300000, guid: 1e70e3278bfa8db408ac8702cfa47f14, type: 3}
+    SorukunImage: {fileID: 21300000, guid: a15afe1be752fc2468c1a237d08108e2, type: 3}
+    StoryText: "\u305D\u308C\u3058\u3083\u3042\u30D3\u30F3\u30B4\u30B2\u30FC\u30E0\u30B9\u30BF\u30FC\u30C8\uFF01\uFF01"
+    ExplantionText: "\u3007\u91D1\u306E\u65A7\u30FB\u9280\u306E\u65A7\u30B2\u30FC\u30E0\n\u30D3\u30F3\u30B4\u306B\u306A\u3063\u305F\u4EBA\u306F\u300C\u91D1\u306E\u65A7\u300D\u304B\u300C\u9280\u306E\u65A7\u300D\u3092\u9078\u3093\u3067\u3082\u3089\u3046\n\u305D\u308C\u4EE5\u5916\u306F\u308F\u304B\u3089\u3093\n\n\u30071\n\n\u30072"
+    CharacterName: "\u305D\u308B\u304F\u3093\u30FB\u3042\u3093\u3069\u304F\u3093"
