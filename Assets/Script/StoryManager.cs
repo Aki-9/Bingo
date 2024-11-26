@@ -30,6 +30,14 @@ public class StoryManager : MonoBehaviour
         storyText.text = "";
         characterName.text = "";
         SetStoryElement(storyIndex, textIndex);
+
+        // 左向きを有効にする
+        Screen.autorotateToLandscapeLeft = true;
+        // 右向きを有効にする
+        Screen.autorotateToLandscapeRight = true;
+
+        // 画面の向きを自動回転に設定する
+        Screen.orientation = ScreenOrientation.AutoRotation;
     }
 
     private void Update()
@@ -54,15 +62,9 @@ public class StoryManager : MonoBehaviour
         }
         else
         {
-            //表示させるストーリーデータがなくなったら遅延処理とシーン遷移
-            Invoke("ChangeScene", 0.5f);
+            //表示させるストーリーデータがなくなった後の処理
+            Debug.Log("説明終了");
         }
-    }
-
-    public void ChangeScene()
-    {
-        //シーン遷移
-        SceneManager.LoadScene("Bingo");
     }
 
     //文字を1文字づつ表示するコルーチン
