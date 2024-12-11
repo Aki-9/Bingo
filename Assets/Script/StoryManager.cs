@@ -13,6 +13,7 @@ public class StoryManager : MonoBehaviour
     [SerializeField] private Image background;
     [SerializeField] private Image andkunImage;
     [SerializeField] private Image sorukunImage;
+    [SerializeField] private Image explanationImage;
     [SerializeField] private TextMeshProUGUI storyText;
     [SerializeField] private TextMeshProUGUI explantionText;
     [SerializeField] private TextMeshProUGUI characterName;
@@ -74,7 +75,7 @@ public class StoryManager : MonoBehaviour
         foreach (var letter in storyDatas[_storyIndex].stories[_textIndex].StoryText.ToCharArray())
         {
             storyText.text += letter;//1文字表示
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(0.075f);
         }
         finishText = true;
     }
@@ -91,6 +92,9 @@ public class StoryManager : MonoBehaviour
         //どのストーリーデータの、どのキャラクタか
         andkunImage.sprite = storyElement.AndkunImage;
         sorukunImage.sprite = storyElement.SorukunImage;
+
+        //どのストーリーデータの、どの画像か
+        explanationImage.sprite = storyElement.ExplanationImage;
 
         //どのストーリーデータの、どのテキストか
         // storyText.text = storyElement.StoryText;
