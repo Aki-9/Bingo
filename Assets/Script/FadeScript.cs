@@ -35,12 +35,12 @@ public class FadeScript : MonoBehaviour
         if (fFadeFlag == true)//フェードイン
         {
             GetComponent<Image>().color = new Color(red, green, blue, alfa);
-            alfa += speed;//透明度を上げる
+            alfa += speed * Time.deltaTime;//透明度を上げる
         }
         else if (alfa > 0.01f && fadeFlag == false)//フェードアウト
         {
             GetComponent<Image>().color = new Color(red, green, blue, alfa);
-            alfa -= speed;//透明度を下げる
+            alfa -= speed * Time.deltaTime;//透明度を下げる
         }
     }
 }

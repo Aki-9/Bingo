@@ -14,7 +14,8 @@ public class Story
     public Sprite Background;
     public Sprite AndkunImage;
     public Sprite SorukunImage;
-    public Sprite ExplanationImage;
+    public Sprite RightImage;
+    public Sprite LeftImage;
     [TextArea]
     public string StoryText;
     [TextArea]

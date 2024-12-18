@@ -13,7 +13,8 @@ public class StoryManager : MonoBehaviour
     [SerializeField] private Image background;
     [SerializeField] private Image andkunImage;
     [SerializeField] private Image sorukunImage;
-    [SerializeField] private Image explanationImage;
+    [SerializeField] private Image rightImage;
+    [SerializeField] private Image leftImage;
     [SerializeField] private TextMeshProUGUI storyText;
     [SerializeField] private TextMeshProUGUI explantionText;
     [SerializeField] private TextMeshProUGUI characterName;
@@ -52,6 +53,8 @@ public class StoryManager : MonoBehaviour
     {
         float cAlfa;//A値を操作するための変数
         cAlfa = fadeScript.alfa;
+
+        Debug.Log("alfa値は" + cAlfa);
 
         if ((Input.GetKeyDown(KeyCode.Return) && finishText == true && cAlfa < 0.2) || (Input.GetMouseButtonDown(0) && finishText == true && cAlfa < 0.2))//後で条件式直す
         {
@@ -106,7 +109,8 @@ public class StoryManager : MonoBehaviour
         sorukunImage.sprite = storyElement.SorukunImage;
 
         //どのストーリーデータの、どの画像か
-        explanationImage.sprite = storyElement.ExplanationImage;
+        rightImage.sprite = storyElement.RightImage;
+        leftImage.sprite = storyElement.LeftImage;
 
         //どのストーリーデータの、どのテキストか
         // storyText.text = storyElement.StoryText;
