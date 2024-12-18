@@ -14,6 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stories:
   - Background: {fileID: 21300000, guid: 0aa75d5994229a241ac96cc4d4dc1311, type: 3}
+    AndkunImage: {fileID: 21300000, guid: 8ecbf0656114a0841904422d207c2274, type: 3}
+    SorukunImage: {fileID: 21300000, guid: a15afe1be752fc2468c1a237d08108e2, type: 3}
+    ExplanationImage: {fileID: 21300000, guid: ee423b211d446c04b86a8f5fe761e473, type: 3}
+    StoryText: 
+    ExplantionText: 
+    CharacterName: 
+  - Background: {fileID: 21300000, guid: 0aa75d5994229a241ac96cc4d4dc1311, type: 3}
     AndkunImage: {fileID: 21300000, guid: 1e70e3278bfa8db408ac8702cfa47f14, type: 3}
     SorukunImage: {fileID: 21300000, guid: 37ed4e5c4c85bc74b8a9a6626edde307, type: 3}
     ExplanationImage: {fileID: 21300000, guid: ee423b211d446c04b86a8f5fe761e473, type: 3}

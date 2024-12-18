@@ -17,20 +17,27 @@ public class StoryManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI storyText;
     [SerializeField] private TextMeshProUGUI explantionText;
     [SerializeField] private TextMeshProUGUI characterName;
+    [SerializeField] private GameObject fadePanel;
 
-    //ストーリーのエレメント配列番号が必要なのでプロパティを
+    //ストーリーのエレメント配列番号が必要なのでプロパティを変更
     public int storyIndex { get; private set; }
     public int textIndex { get; private set; }
 
     //テキストがすべて表示されたかどうか
     private bool finishText = false;
 
+    //FadeScriptを参照できるようにした
+    public FadeScript fadeScript;
+
+    public bool flag = false;
+
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         storyText.text = "";
         characterName.text = "";
         SetStoryElement(storyIndex, textIndex);
+        fadePanel.SetActive(true);
 
         // 左向きを有効にする
         Screen.autorotateToLandscapeLeft = true;
@@ -43,10 +50,14 @@ public class StoryManager : MonoBehaviour
 
     private void Update()
     {
-     if ((Input.GetKeyDown(KeyCode.Return) && finishText == true) || (Input.GetMouseButtonDown(0) && finishText == true))
+        float cAlfa;//A値を操作するための変数
+        cAlfa = fadeScript.alfa;
+
+        if ((Input.GetKeyDown(KeyCode.Return) && finishText == true && cAlfa < 0.2) || (Input.GetMouseButtonDown(0) && finishText == true && cAlfa < 0.2))//後で条件式直す
         {
             textIndex++;//インデックスを増やす
-            //テキスト部を初期化して
+
+            //テキスト部を初期化
             storyText.text = "";
             explantionText.text = "";
             ProgressionStory(storyIndex);
@@ -64,7 +75,8 @@ public class StoryManager : MonoBehaviour
         else
         {
             //表示させるストーリーデータがなくなった後の処理
-            Debug.Log("説明終了");
+            //フェードイン処理のフラグをtrueに変更
+            flag = true;
         }
     }
 
@@ -75,7 +87,7 @@ public class StoryManager : MonoBehaviour
         foreach (var letter in storyDatas[_storyIndex].stories[_textIndex].StoryText.ToCharArray())
         {
             storyText.text += letter;//1文字表示
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(0.025f);//適正スピード：0.025f
         }
         finishText = true;
     }

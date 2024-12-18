@@ -29,7 +29,7 @@ public class ScrennManager : MonoBehaviour
             }
         }
 
-        Debug.Log(result);
+        //Debug.Log(result);
 
         return result;
     }
